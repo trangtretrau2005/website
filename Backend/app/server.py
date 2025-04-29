@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from Backend.app.routes import eventRoutes, guestroutes, personnelRoutes,userroutes,EventHistoryRoutes
 from Backend.app.init import ok
 
-app = FastAPI()
+app = FastAPI(debug=True)
 ok()
 # Kết nối các route vào ứng dụng
 app.include_router(eventRoutes.router, prefix="/api/events", tags=["Events"])

@@ -1,5 +1,4 @@
 from fastapi import APIRouter, Depends
-from Backend.app.controllers.guestController import add_guest_to_event, get_guests_for_event
 from Backend.app.config.database import SessionLocal
 from sqlalchemy.orm import Session
 
@@ -16,3 +15,5 @@ def get_db():
 @router.get("/{event_id}")
 async def get_event_history(event_id: int, db: Session = Depends(get_db)):
     return get_event_history(event_id, db)
+
+

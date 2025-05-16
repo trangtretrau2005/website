@@ -1,0 +1,210 @@
+/* Reset + Cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1e293b;
+    transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #3b82f6;
+  }
+  
+  /* Main content */
+  .main {
+    padding: 50px;
+    width: 1200px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e293b;
+    position: relative;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+  }
+  
+  /* .header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+  } */
+  
+  /* User info */
+  .user {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .user button {
+    margin-left: 10px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Actions button */
+  .actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .actions button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    /* background-color: #3b82f6; */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* .actions button:hover { */
+    /* background-color: #2563eb; */
+  /* } */
+  
+  /* File input ẩn */
+  input[type="file"] {
+    display: none;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  th {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #475569;
+  }
+  
+  td {
+    font-weight: 500;
+    color: #334155;
+  }
+  
+  /* Xóa button trong bảng */
+  td button {
+    background: #ef4444;
+    color: #ffffff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  td button:hover {
+    background: #dc2626;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #e2e8f0;
+    }
+  
+    .main {
+      padding: 20px;
+    }
+  }
+  .reload-btn {
+    background: #facc15; /* Màu vàng nhạt */
+    color: #1e293b;
+    border: none;
+    margin: 0 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .reload-btn:hover {
+    background: #eab308; /* Vàng đậm hơn khi hover */
+  }
+  #addForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  #addForm button {
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #addForm button:hover {
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+  }
+  
